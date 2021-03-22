@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.example.myapplication.databinding.ActivityMainBinding;
 import com.example.myapplication.model.Question;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,6 +47,12 @@ public class MainActivity extends AppCompatActivity {
     }
     private void checkAnswer(boolean userChoseCorrect) {
         boolean answerIsCorrect = questionBank[currentQuestionIndex].isAnswerTrue();
-
+        int messageId;
+        if(answerIsCorrect == userChoseCorrect) {
+            messageId = R.string.correct_answer;
+        } else {
+            messageId = R.string.incorrect_answer;
+        }
+        Snackbar.make(binding.imageView, messageId, Snackbar.LENGTH_SHORT).show();
     }
 }
