@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="true_button_text">TRUE</string>
+    <string name="false_button_text">FALSE</string>
+    <string name="prev_text">PREV</string>
+    <string name="next_text">NEXT</string>
+    <string name="textview">Question goes here</string>
+    <string name="image_description">Android robot</string>
+    <string name="question_declaration">it was adopted in 1976</string>
+    <string name="correct_answer">correct</string>
+    <string name="incorrect_answer">incorrect</string>
+    <string name="question_foo">who is foo</string>
+    <string name="question_boo">what is boo</string>
+</resources>
